@@ -1,0 +1,308 @@
+/* FUENTES */
+@font-face {
+  font-family: Montserrat;
+  src: url("fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("fonts/Montserrat-Light.ttf");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("fonts/Montserrat-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("fonts/Montserrat-Italic.ttf");
+  font-style: italic;
+}
+
+/* GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: Montserrat;
+}
+
+/* --- HEADER --- */
+/* PARTE DE ARRIBA */
+#img_logo {
+  width: 240px;
+}
+
+#header_top * {
+  margin: 0;
+  padding: 0;
+}
+
+#header_top * i,
+#header_top * span {
+  color: white;
+  text-decoration: none;
+}
+
+#header_top * i {
+  font-size: 30px;
+}
+
+#header_top * li {
+  margin-right: 15px;
+}
+
+#acceso_texto,
+#carrito_texto {
+  display: none;
+}
+
+#carrito_num {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+
+/* MENÚ */
+#header_menu * {
+  padding: 0;
+  margin: 0;
+}
+
+#header_menu {
+  margin: 10px 0px;
+}
+
+#header_menu * a {
+  color: white;
+  text-decoration: none;
+}
+
+#header_menu * a:hover {
+  color: yellow;
+  font-weight: bold;
+}
+
+.letra_header_menu {
+  width: 30px;
+}
+
+#header_menu * li:last-child {
+  margin-left: 8px;
+}
+
+.texto_header_menu {
+  font-size: 8px;
+}
+/* --- CUERPO --- */
+/* CARRUSEL */
+.slide_etiqueta {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px 10px;
+}
+
+.slide_label {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.slide_texto {
+  font-size: 12px;
+}
+
+/* INICIO SESIÓN */
+#inicioSesion {
+  padding: 5px;
+  padding-top: 0px;
+}
+
+#inicioSesion h5 {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.1);
+}
+
+#inicioSesion form {
+  padding: 10px 10px;
+  background-color: rgb(255, 255, 255, 0.15);
+}
+
+#inicioSesion * label {
+  color: white;
+}
+
+.icono_pass {
+  float: right;
+  margin-right: 5px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+
+#enlaceOlvidarDatos a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#enlaceOlvidarDatos {
+  margin-top: 7px;
+}
+
+#debajo_form {
+  background-color: rgb(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#aunNoReg_texto {
+  color: white;
+  font-size: 15px;
+}
+
+#btn_registro {
+  width: 100%;
+  padding: 0px 5px;
+}
+
+#datosVacios p,
+#datosIncorrectos p {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+}
+
+/* MI CUENTA (CONECTADO) */
+#miCuenta_h5 {
+  color: white;
+  background-color: rgb(255, 255, 255, 0.15);
+}
+
+.miCuenta_a {
+  background-color: rgb(255, 255, 255, 0.15);
+  color: yellowgreen;
+  text-decoration: none;
+  text-align: center;
+}
+
+.miCuenta_a:hover {
+  color: yellowgreen;
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+/* SERVICIO DOMICILIO */
+#servicio_domicilio_principal {
+  width: 100%;
+}
+
+#servicio_domicilio {
+  border-bottom: 1px solid white;
+}
+
+.horarios_loc {
+  border-top: 1px solid white;
+}
+/* -- FOOTER -- */
+#redsoc_footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.red_social {
+  width: 50px;
+}
+
+.red_social:hover {
+  transform: scale(1.1);
+}
+
+#texto_footer {
+  color: white;
+  font-size: 10px;
+}
+
+.url_admin {
+  color: white;
+  text-decoration: none;
+}
+
+.url_admin:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+/* BREAKPOINTS */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #img_logo {
+    width: 300px;
+  }
+
+  .letra_header_menu {
+    width: 60px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #acceso_texto,
+  #carrito_texto {
+    display: inherit;
+    font-size: 10px;
+  }
+
+  #carrito_num {
+    position: absolute;
+    top: -20px;
+    right: 5px;
+  }
+
+  #header_menu * li:last-child {
+    margin-left: 15px;
+  }
+
+  .texto_header_menu {
+    font-size: 12px;
+  }
+
+  .letra_header_menu {
+    width: 45px;
+  }
+
+  #enlaceOlvidarDatos a {
+    font-size: 12px;
+  }
+
+  #aunNoReg_texto {
+    font-size: 15px;
+  }
+
+  #inicioSesion h5 {
+    text-align: left;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .texto_header_menu {
+    font-size: 15px;
+  }
+
+  #enlaceOlvidarDatos a {
+    font-size: 15px;
+  }
+
+  #aunNoReg_texto {
+    font-size: 15px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
